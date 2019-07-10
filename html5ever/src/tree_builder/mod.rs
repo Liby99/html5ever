@@ -1147,7 +1147,7 @@ where
     }
 
     fn foster_parent_in_body(&mut self, token: Token) -> ProcessResult<Handle> {
-        warn!("foster parenting not implemented");
+        // warn!("foster parenting not implemented");
         self.foster_parenting = true;
         let res = self.step(InBody, token);
         // FIXME: what if res is Reprocess?
